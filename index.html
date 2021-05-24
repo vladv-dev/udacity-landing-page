@@ -1,14 +1,245 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>FinFlow</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
   </head>
   <body>
-      <header></header>
-      <main></main>
-      <footer></footer>
+      <header>
+        <nav class="navbar-container">
+          <a href="#" class="home-link" id="home">FinFlow</a>
+          <button class="burger">
+              <span class="burger-bar"></span>
+              <span class="burger-bar"></span>
+              <span class="burger-bar"></span>
+          </button>
+          <div class="navbar-menu">
+              <ul class="navbar-links">
+                  <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                  <li class="navbar-item"><a href="#features" class="navbar-link">Features</a></li>
+                  <li class="navbar-item"><a href="#pricing" class="navbar-link">Pricing</a></li>
+                  <li class="navbar-item"><a href="#team" class="navbar-link">Team</a></li>
+                  <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      </header>
+      <main>
+        <!-- === ABOUT SECTION === -->
+        <section class="about" id="about">
+          <h1>FinFlow</h1>
+          <p><strong>FinFlow</strong> is at the technology forefront of enabling 
+          frictionless transactions among businesses and individuals, within the country or 
+          across borders. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+          Iste, doloremque nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+          Iste, doloremque nihil?</p>
+        </section>
+        <!-- === FEATURES === -->
+        <section class="features" id="features">
+          <h2>Best Features</h2>
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="costs">Minimal Costs</button>
+            <button class="tab-btn" data-id="secure">Secure & Reliable</button>
+            <button class="tab-btn" data-id="process">Fast processing</button>
+          </div>
+          <div class="feature-content">
+            <div class="content active" id="costs">
+              <div class="svg-container">
+                  <img src="./images/banknote.svg" alt="banknote">
+              </div>
+              <p>Due to our innovative techonology, we are able to reduce
+                  the cost of transfer by 80% compared to our rivals.
+              </p>
+            </div>
+            <div class="content" id="secure">
+                <div class="svg-container">
+                    <img src="./images/safebox.svg" alt="safebox">
+                </div>
+                <p>Our transfers are protected by our uniquely randomised 
+                    algorithms, that can't be copied or re-used again.
+                </p>
+            </div>
+            <div class="content" id="process">
+                <div class="svg-container">
+                    <img src="./images/speedy.svg" alt="fast moving man">
+                </div>
+                <p>Sharding implemented withhin our protocol enables 
+                    our transfers to be processed superfast, making other blockchain
+                    protocols for transfers obsolete.
+                </p>
+            </div>
+          </div>
+        </section>
+        <!-- === PRICING === -->
+        <section id="pricing">
+          <h2>Pricing</h2>
+          <div class="pricing-container">
+            <div class="unit">
+              <h4>Self-employed</h4>
+              <ul class="pricing-points">
+                <li>Lorem ipsum</li>
+                <li>Iusto asperiores</li>
+                <li>Lorem ipsum technology</li>
+              </ul>
+              <button class="pricing-btn" onclick="alert('In progress')">Enquire..</button>
+            </div>
+            <div class="unit">
+              <h4>UK businesses</h4>
+              <ul class="pricing-points">
+                <li>Lorem ipsum technology</li>
+                <li>instant verification</li>
+                <li>risk free service</li>
+              </ul>
+              <button class="pricing-btn" onclick="alert('In progress')">Enquire..</button>
+            </div>
+            <div class="unit">
+              <h4>International businesses</h4>
+              <ul class="pricing-points">
+                <li>fastest across borders</li>
+                <li>instant verification</li>
+                <li>tailored service</li>
+              </ul>
+              <button class="pricing-btn" onclick="alert('In progress')">Enquire..</button>
+            </div>
+          </div>
+        </section>
+        <!-- === TEAM === -->
+        <section class="team-container" id="team">
+          <h2>Our Team</h2>
+          <div class="card-container">
+            <article class="member">
+              <div class="img-container">
+                <img src="images/pexels-ali-pazani-2811089.jpg" alt="profile photo">
+              </div>
+              <h4>Rebecca Jones</h4>
+              <p class="job">CEO of FinFlow</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                Iste, doloremque nihil?</p>
+            </article>
+            <article class="member">
+              <div class="img-container">
+                <img src="images/pexels-pixabay-220453.jpg" alt="profile photo">
+              </div>
+              <h4>Martin Tahini</h4>
+              <p class="job">COO of FinFlow</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                Iste, doloremque nihil?</p>
+            </article>
+            <article class="member">
+              <div class="img-container">
+                <img src="images/pexels-pixabay-415829.jpg" alt="profile photo">
+              </div>
+              <h4>Patricia Pinto</h4>
+              <p class="job">blockchain developer</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                Iste, doloremque nihil?</p>
+            </article>
+            <article class="member">
+              <div class="img-container">
+                <img src="images/pexels-sound-on-3757035.jpg" alt="profile photo">
+              </div>
+              <h4>Par Nguyen</h4>
+              <p class="job">senior back-end developer</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                Iste, doloremque nihil?</p>
+            </article>
+            <article class="member">
+              <div class="img-container">
+                <img src="images/pexels-andrea-piacquadio-3785079.jpg" alt="profile photo">
+              </div>
+              <h4>Gustaff Gutenberg</h4>
+              <p class="job">marketing</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                Iste, doloremque nihil?</p>
+            </article>
+          </div>
+        </section>
+        <!-- === CONTACT FORM & ADDRESS === -->
+        <section class="contact-container" id="contact">
+          <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="">
+              <div class="user">
+                <input type="text" id="full-name" name="full-name" required="">
+                <label for="full-name">Full Name</label>
+              </div>
+              <div class="user">
+                <input type="text" id="email" name="email" required="">
+                <label for="email">Email</label>
+              </div>
+              <div class="user">
+                <input type="number" id="phone" name="phone" required="">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="user">
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button class="submit-btn" onclick="alert('just testing you')">Submit</button>
+            </form>
+          </div>
+          <!-- --- ADDRESS --- -->
+          <div class="address-container">
+            <h2>Address</h2>
+            <div class="mail-icon">
+              <i class="far fa-envelope-open"></i>
+            </div>
+            <address>
+              61 Queen's Gate<br/>
+              Kensington<br/>
+              <strong>London</strong><br/>
+              SW7 5JP
+            </address>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.9453921758386!2d-0.18151478341308053!3d51.4958695796334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876055daf787c0d%3A0x1f076c7742b454ca!2s61%20Queen&#39;s%20Gate%2C%20Kensington%2C%20London%20SW7%205JP!5e0!3m2!1sen!2suk!4v1618660799534!5m2!1sen!2suk" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <!-- FOOTER -->
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li class="icon">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="https://www.linkedin.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- copyright, arrow-up -->
+        <p>Copyright &copy; <span id="date"></span> FinFlow All Rights Reserved</p>
+          <p>Designed by Vladv-dev</p>
+        <a href="#" class="scroll-up-btn">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
