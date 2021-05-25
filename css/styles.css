@@ -450,6 +450,7 @@ footer {
     }
     .navbar-item .current {
         border: 2px solid #fff;
+        background-color: rgb(189, 145, 64);
     }
 
     .features,
